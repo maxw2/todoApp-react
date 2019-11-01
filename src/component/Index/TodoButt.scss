@@ -1,0 +1,50 @@
+.todo-button {
+    z-index: 99;
+    position: fixed;
+    right: 44px;
+    bottom: 64px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    border-radius: 44px;
+    width: 44px;
+    height: 44px;
+    color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease 0s;
+  }
+  .todo-button-action {
+    transition: transform 0.5s ease 0s;
+    transform: scale(0);
+    //
+  }
+  .todo-button::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 2px;
+    background: white;
+    transform: translate3d(-50%, -50%, 0);
+  }
+  .todo-button::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background: white;
+    transform: translate3d(-50%, -50%, 0);
+  }
+  .todo-button-editing {
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 0px;
+  }

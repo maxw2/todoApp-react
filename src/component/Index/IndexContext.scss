@@ -1,0 +1,30 @@
+.index-context {
+  padding: 60px 35px;
+  text-align: left;
+  font-weight: 300;
+  color: white;
+  // 头像
+  .userImg {
+    .img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  // 名称
+  .userName {
+    h1 {
+      font-weight:  300;
+    }
+  }
+  // 内容
+  .userContext {
+    p {
+      margin: 0px;
+    }
+  }
+}

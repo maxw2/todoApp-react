@@ -1,0 +1,82 @@
+.index-nav-item {
+  width: 100%;
+  height: 100%;
+  background: white;
+  .context {
+    // 头
+    .title {
+      padding: 22px;
+      display: flex;
+      justify-content: space-between;
+      .user {
+        div {
+          width: 44px;
+          height: 44px;
+          border: 1px solid #eee;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 44px;
+          color: rgb(255, 98, 98);
+        }
+      }
+      .option {
+        color: #eee;
+      }
+    }
+    //
+    .body {
+      padding: 0px 22px;
+      .body-tips {
+        opacity: 0.6;
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .body-title {
+        p {
+          color: #666;
+          font-size: 32px;
+          margin: 6px 0 0 0px;
+        }
+      }
+      // 进度条
+      .body-progress {
+        display: flex;
+        align-items: center;
+        transition: all 0.5s ease 0s;
+        .progress-line {
+          height: 3px;
+          margin-right: 10px;
+          flex: 1;
+          background: #eee;
+          i {
+            width: 0%;
+            height: 100%;
+            background: rgb(255, 98, 98);
+            display: block;
+            transition: width 0.5s ease-in 0s;
+          }
+        }
+        .progress-num {
+          font-size: 12px;
+          color: #666;
+        }
+      }
+      // 表格
+      .body-task {
+        h4 {
+          color: #999;
+        }
+        .task-ul {
+          width: 100%;
+          padding: 0px;
+          margin: 0px;
+          text-align: left;
+          li {
+            display: flex;
+            border-bottom: 1px solid #eee;
+          }
+        }
+      }
+    }
+  }
+}

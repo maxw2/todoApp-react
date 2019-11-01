@@ -1,0 +1,16 @@
+.index-title {
+  padding-top: 10px;
+  color: white;
+  //   display: flex;
+  .align-left {
+    margin-left: 20px;
+    float: left;
+  }
+  .title {
+      display:inline-block;
+  }
+  .search {
+    margin-right: 20px;
+    float: right;
+  }
+}

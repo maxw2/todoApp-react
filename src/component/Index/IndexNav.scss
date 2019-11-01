@@ -1,0 +1,32 @@
+.index-nav {
+  text-align: left;
+  .date {
+    color: white;
+    font-weight: 300;
+    padding-left: 35px;
+  }
+
+  .scroll {
+    width: 100%;
+    overflow: hidden;
+    .scroll-item {
+      width: 300%;
+      display: flex;
+      padding: 0px;
+      list-style: none;
+      transform: translate3d(0, 0, 0);
+      transition: transform 0.4s ease-in 0s;
+      .item,.item_select {
+        overflow: hidden;
+        height: 400px;
+        margin-left: 35px;
+        border-radius: 10px;
+        background: white;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+      }
+      .item_select{
+        visibility: hidden;
+      }
+    }
+  }
+}
