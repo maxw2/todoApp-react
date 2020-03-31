@@ -72,7 +72,7 @@ const initState = {
                 id: 7,
                 name: 'House Keeping',
                 date: 'Today',
-                finish: false
+                finish: true
             },{
                 id: 8,
                 name: 'Html / Css Style',

@@ -42,6 +42,12 @@ function TodoTask(props) {
             }
         }
     }
+    const style = {
+        transform: `translate3d(0, 
+            ${document.querySelector('.index-nav-item') ?
+                document.querySelector('.index-nav-item').clientHeight - 90 - 95 : 10}px, 
+                0)`
+    }
     return (
         <div className='index-nav-item'>
             <div className='context'  >
@@ -52,7 +58,7 @@ function TodoTask(props) {
                         </div>
                     </div>
                 </div>
-                <div className='body' style={{ transform: 'translate3d(0,210px,0)' }}>
+                <div className='body' style={style}>
                     <div className='body-tips'>
                         {`${Object.keys(item.task).length} Tasks`}
                     </div>

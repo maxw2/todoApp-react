@@ -20,7 +20,6 @@ function IndexNav() {
         let itemStyle = {
             borderRadius: '10px',
             top: elRect.top,
-            // left: elRect.left,
             left: el.offsetLeft,
             width: elRect.width,
             height: elRect.height
@@ -41,7 +40,8 @@ function IndexNav() {
             let dir = downX - moveX
             if (!moveX) return
             let num = Number(targetEl.getAttribute('data-index'))
-
+            let width = document.querySelector('.index-nav-item').clientWidth + 20
+            
             if (num === 0 && dir < 0) return
             if (num === targetEl.children.length - 1 && dir > 0) return
             // left
@@ -49,20 +49,16 @@ function IndexNav() {
             // right
             if (dir > 0) num++
 
-            targetEl.style.transform = `translate3d( ${-317 * num}px,0,0)`
+            targetEl.style.transform = `translate3d( ${-width * num}px,0,0)`
             targetEl.setAttribute('data-index', num)
 
             // background Img 
             bodyEl.style.backgroundImage = backImg[num]
 
-
-
             targetEl.ontouchmove = null
             targetEl.ontouchend = null
             downX = null
             moveX = null
-
-
         }
 
     }

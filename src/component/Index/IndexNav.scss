@@ -1,32 +1,37 @@
 .index-nav {
   text-align: left;
+  height: 60%;
   .date {
     color: white;
     font-weight: 300;
-    padding-left: 35px;
+    padding-left: 20px;
   }
 
   .scroll {
     width: 100%;
+    height: calc(100% - 22px);
     overflow: hidden;
     .scroll-item {
+      box-sizing: border-box;
       width: 300%;
+      height: 100%;
       display: flex;
+      flex-wrap: nowrap;
       padding: 0px;
       list-style: none;
       transform: translate3d(0, 0, 0);
       transition: transform 0.4s ease-in 0s;
       .item,.item_select {
         overflow: hidden;
-        height: 400px;
-        margin-left: 35px;
+        height: 90%;
+        margin-left: 20px;
         border-radius: 10px;
         background: white;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
       }
-      .item_select{
-        visibility: hidden;
-      }
+      // .item_select{
+      //   visibility: hidden;
+      // }
     }
   }
 }
